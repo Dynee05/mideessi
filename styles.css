@@ -177,3 +177,18 @@ p {
   opacity: 1;
   transform: translateY(30px);
 }
+
+.footer .blocreseaux {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* espace entre les icônes */
+  margin-bottom: 20px;
+}
+
+.footer .reseaux img {
+  width: 24px; /* ajuste selon ton besoin */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
