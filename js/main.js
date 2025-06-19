@@ -64,7 +64,7 @@ window.addEventListener("scroll", () => {
 form.addEventListener("submit", function(e) {
   e.preventDefault();
 
-  emailjs.sendForm("service_g6qpvd7", "template_7kmvovg", this)
+  emailjs.sendForm("service_g6qpvd7", "template_mideessi_work", this)
     .then(function(response) {
       alert("Message envoyé avec succès !");
       form.reset();
