@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MIDEESSI</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <img src="img\logo_sans_fond.png" alt="Logo MIDEESSI">
+    </div>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="burger">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+  </header>
+
+  <section id="accueil" class="hero">
+    <div class="hero-content">
+      <h1>L'innovation est notre devise</h1>
+      <p>Construisons ensemble les outils numériques de demain</p>
+      <a href="#services" class="cta-button">Découvrir nos services</a>
+    </div>
+  </section>
+
+  <section id="services" class="services">
+    <h2>Nos Services</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>Conseils & Automatisation</h3>
+        <p>Nous vous aidons à optimiser vos processus avec des solutions numériques intelligentes et efficaces.</p>
+      </div>
+      <div class="service-card">
+        <h3>Développement de logiciels</h3>
+        <p>Conception de logiciels sur mesure pour répondre aux besoins spécifiques de votre entreprise.</p>
+      </div>
+      <div class="service-card">
+        <h3>Formation & Inclusion numérique</h3>
+        <p>Accompagnement des jeunes et organisations pour renforcer leurs compétences numériques.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <div class="contact-info">
+      <p><strong>Adresse :</strong> Cotonou, Bénin, Quartier Zogbo</p>
+      <p><strong>Email :</strong> mideessitmp@gmail.com </p>
+      <p><strong>Téléphone :</strong> +229 01 64 40 96 91</p>
+    </div>
+
+    <div class="contact-form">
+      <h3>Envoyez-nous un message</h3>
+      <form action="#" method="POST">
+        <input type="text" name="name" placeholder="Nom" required>
+        <input type="email" name="email" placeholder="Adresse email" required>
+        <input type="text" name="subject" placeholder="Objet" required>
+        <textarea name="message" placeholder="Votre message" required></textarea>
+        <button type="submit">Envoyer</button>
+      </form>
+    </div>
+    <!-- EmailJS SDK -->
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script src="js/main.js" defer></script>
+  </section>
+
+  <footer class="footer">
+
+    <div class="blocreseaux">
+    <div class="reseaux"><a href=""><img src="img\facebook.png" alt="facebook"></a></div>
+    <div class="reseaux"><a href=""><img src="img\insta.png" alt="Instagram"></a></div>
+    <div class="reseaux"><a href=""><img src="img\twitter.png" alt="X(Twitter)"></a></div>
+    <div class="reseaux"></div>
+  </div>
+
+    <p>&copy; 2025 MIDEESSI. Tous droits réservés.</p>
+    <p>Créé par la jeunesse pour la jeunesse</p>
+  </footer>
+
+  <button id="scrollTopBtn" title="Retour en haut">↑</button>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
