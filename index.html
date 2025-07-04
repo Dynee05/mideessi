@@ -1,113 +1,171 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  
-  <title>MIDEESSI</title>
-  
-  <!-- SEO de base -->
-<meta name="description" content="MIDEESSI est une startup innovante spécialisée dans le développement logiciel, l'automatisation et la formation numérique.">
-<meta name="keywords" content="Mideessi, startup, développement web, Bénin, innovation, automatisation, numérique, formation">
-<meta name="author" content="MIDEESSI">
-
-<!-- Pour le responsive -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<meta property="og:title" content="MIDEESSI - L'innovation est notre devise">
-<meta property="og:description" content="Startup béninoise spécialisée en numérique, logiciels et formation.">
-<meta property="og:image" content="https://i.postimg.cc/prBkwcPp/logo-sans-fond.png"> <!-- facultatif -->
-<meta property="og:url" content="https://mideessi-93b8.onrender.com">
-
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&family=Open+Sans&display=swap" rel="stylesheet">
-</head>
-<body>
-  <header class="header">
-    <div class="logo">
-      <img src="img\logo_sans_fond.png" alt="Logo MIDEESSI">
-    </div>
-    <nav class="navbar">
-      <ul class="nav-links">
-        <li><a href="#accueil">Accueil</a></li>
-        <li><a href="#apropos">À propos</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <div class="burger">
-        <span></span><span></span><span></span>
-      </div>
-    </nav>
-  </header>
-
-  <section id="accueil" class="hero">
-    <div class="hero-content">
-      <h1>L'innovation est notre devise</h1>
-      <p>Construisons ensemble les outils numériques de demain</p>
-      <a href="#services" class="cta-button">Découvrir nos services</a>
-    </div>
-  </section>
-
-  <section id="services" class="services reveal">
-    <h2>Nos Services</h2>
-    <div class="services-grid">
-      <div class="service-card">
-        <h3>Conseils & Automatisation</h3>
-        <p>Nous vous aidons à optimiser vos processus avec des solutions numériques intelligentes et efficaces.</p>
-      </div>
-      <div class="service-card">
-        <h3>Développement de logiciels</h3>
-        <p>Conception de logiciels sur mesure pour répondre aux besoins spécifiques de votre entreprise.</p>
-      </div>
-      <div class="service-card">
-        <h3>Formation & Inclusion numérique</h3>
-        <p>Accompagnement des jeunes et organisations pour renforcer leurs compétences numériques.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="contact reveal">
-    <h2>Contact</h2>
-    
-    <div id="form-message" class="form-message"></div>
-    
-    <div class="contact-info">
-      <p><strong>Adresse :</strong> Cotonou, Bénin, Quartier Zogbo</p>
-      <p><strong>Email :</strong> mideessitmp@gmail.com </p>
-      <p><strong>Téléphone :</strong> +229 01 64 40 96 91</p>
-    </div>
-
-    <div class="contact-form">
-      <h3>Envoyez-nous un message</h3>
-      <div id="form-message" class="form-message"></div>
-
-      <form action="#" method="POST">
-        <input type="text" name="name" placeholder="Nom" required>
-        <input type="email" name="email" placeholder="Adresse email" required>
-        <input type="text" name="subject" placeholder="Objet" required>
-        <textarea name="message" placeholder="Votre message" required></textarea>
-        <button type="submit">Envoyer</button>
-      </form>
-    </div>
-    <!-- EmailJS SDK -->
-<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-<script src="js/main.js" defer></script>
-  </section>
-
-  <footer class="footer">
-
-    <div class="blocreseaux">
-    <div class="reseaux"><a href="https://www.facebook.com/profile.php?id=61575235346460"><img src="img\facebook.png" alt="facebook"></a></div>
-    <div class="reseaux"><a href=""><img src="img\insta.png" alt="Instagram"></a></div>
-    <div class="reseaux"><a href=""><img src="img\twitter.png" alt="X(Twitter)"></a></div>
-    <div class="reseaux"></div>
-  </div>
-
-    <p>&copy; 2025 MIDEESSI. Tous droits réservés.</p>
-    <p>Créé par la jeunesse pour la jeunesse</p>
-  </footer>
-
-  <script src="js/main.js" defer></script>
-  
-  <button id="scrollToTopBtn" title="Retour en haut">↑</button> 
-</body>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIDEESSI - Nous sommes indépendants</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+        
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="#" class="logo">
+  <img src="img/logo.png" alt="Logo MIDEESSI">
+            </a>
+            
+            <!-- Menu Desktop -->
+            <ul class="nav-menu">
+                <li><a href="#accueil" class="nav-link">Accueil</a></li>
+                <li><a href="about.html" class="nav-link">À propos</a></li>
+                <li><a href="solutions.html" class="nav-link">Solutions</a></li>
+                <li><a href="projets.html" class="nav-link">Projets</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+
+            <!-- Hamburger Menu -->
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+
+        <!-- Menu Mobile -->
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="#accueil" class="nav-link">Accueil</a></li>
+                <li><a href="about.html" class="nav-link">À propos</a></li>
+                <li><a href="solutions.html" class="nav-link">Solutions</a></li>
+                <li><a href="projets.html" class="nav-link">Projets</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Overlay -->
+        <div class="overlay"></div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Nous sommes indépendants</h1>
+                <p class="hero-subtitle">MIDEESSI - Solutions innovantes du Bénin</p>
+                <p class="hero-description">
+                    Startup béninoise fondée par des jeunes autodidactes passionnés, nous créons des solutions 
+                    technologiques innovantes pour améliorer le quotidien de notre communauté avec créativité, 
+                    solidarité et excellence.
+                </p>
+                <a href="#solutions" class="cta-button">Découvrir nos solutions</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title fade-in">Qui sommes-nous ?</h2>
+            <div class="about-grid">
+                <div class="about-text fade-in">
+                    <h3>Notre Mission</h3>
+                    <p>
+                        MIDEESSI signifie "Nous sommes indépendants" en fon. Notre mission est claire : 
+                        créer des solutions innovantes pour améliorer le quotidien de notre communauté. 
+                        Nous sommes une équipe de jeunes autodidactes passionnés, ancrée dans nos 
+                        valeurs de créativité, solidarité et technologie.
+                    </p>
+                    <br>
+                    <p>
+                        Nous nous concentrons sur notre environnement direct, en identifiant les 
+                        problèmes concrets de ceux qui nous entourent et en développant des solutions 
+                        technologiques adaptées et accessibles.
+                    </p>
+                </div>
+                <div class="about-visual fade-in">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section id="solutions" class="solutions">
+        <div class="container">
+            <h2 class="section-title fade-in">Nos Solutions</h2>
+            <div class="solutions-grid">
+                <div class="solution-card fade-in">
+                    <div class="solution-icon">📁</div>
+                    <h3>TITO</h3>
+                    <p>
+                        Notre premier projet : un logiciel intelligent qui range automatiquement 
+                        les fichiers dans votre ordinateur. Bientôt enrichi par l'intelligence 
+                        artificielle pour une organisation encore plus performante.
+                    </p>
+                </div>
+                <div class="solution-card fade-in">
+                    <div class="solution-icon">🚀</div>
+                    <h3>Innovation Continue</h3>
+                    <p>
+                        Nous développons constamment de nouvelles solutions pour répondre aux 
+                        besoins de notre communauté. Chaque projet est pensé pour avoir un 
+                        impact positif et durable.
+                    </p>
+                </div>
+                <div class="solution-card fade-in">
+                    <div class="solution-icon">🤝</div>
+                    <h3>Approche Collaborative</h3>
+                    <p>
+                        Nous travaillons en étroite collaboration avec notre communauté pour 
+                        identifier les vrais besoins et créer des solutions qui font vraiment 
+                        la différence.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision Section -->
+    <section class="vision">
+        <div class="container">
+            <h2 class="section-title fade-in">Notre Vision</h2>
+            <div class="vision-content fade-in">
+                <p>
+                    Nous croyons en la puissance de la jeunesse africaine et en sa capacité à 
+                    créer des solutions innovantes. Notre approche allie tradition et modernité, 
+                    enracinement culturel et vision globale. Nous voulons inspirer une nouvelle 
+                    génération d'entrepreneurs africains autonomes et créatifs.
+                </p>
+            </div>
+            <div class="keywords fade-in">
+                <span class="keyword">Innovation</span>
+                <span class="keyword">Jeunesse</span>
+                <span class="keyword">Solution</span>
+                <span class="keyword">Autonomie</span>
+                <span class="keyword">Progrès</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <h3>MIDEESSI</h3>
+                <p>Startup béninoise - Solutions innovantes</p>
+                <p>Email: contact@mideessi.com</p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 MIDEESSI. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+    
+  <script src="js/main.js" defer></script>
+</body>
 </html>
